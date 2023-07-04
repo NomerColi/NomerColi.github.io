@@ -7,8 +7,8 @@
 #platanus_title
 {
     color: rgba(255, 255, 255, 255);
-    -webkit-text-stroke: 2px rgb(130, 74, 250);
-    font-family: 'platanus_font', 'monospace';
+    /* -webkit-text-stroke: 2px rgb(130, 74, 250); */
+    /* font-family: 'platanus_font', 'monospace'; */
     font-size: 5.8rem; 
     letter-spacing: +0.7rem;
     text-align: center;
