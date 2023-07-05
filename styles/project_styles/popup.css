@@ -51,3 +51,8 @@
     letter-spacing: -.05rem;
 } 
 
+#popup_images
+{
+    align-self: center;
+    text-align: center;
+}
