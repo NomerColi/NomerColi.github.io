@@ -402,6 +402,8 @@ video.graded, .clip video {
 @media (prefers-reduced-motion: reduce) { .yt img { transition: none; } }
 
 .work__media { margin: 1.5rem 0 1rem; }
+.work__shot { display: block; width: 100%; max-width: 30rem; height: auto; }
+.work__shot--small { max-width: 315px; }
 
 /* ---------- Earlier games ---------- */
 
