@@ -263,7 +263,7 @@ video.graded, .clip video {
   font-variant-numeric: lining-nums tabular-nums;
 }
 .results__list dd { margin: 0; }
-.results__after { margin: 1.75rem 0 0; color: var(--ash); }
+.results__after { margin: 0; color: var(--ash); }
 
 .subscene { margin-top: clamp(5rem, 10vw, 7rem); }
 .subscene__title {
