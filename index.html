@@ -1,80 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <!-- Metadata -->
-        <meta charset="utf-8">
-        
-        <!-- Mobile Specific Metas -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="keywords" content="programmer, coding, console, c, c++, c#, games developer, software developer, english" />
-        <meta name="description" content="Games and software developer interested in solving mental problems." />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yunjae Cho</title>
+  <meta name="description" content="Yunjae Cho builds interactive experiences people can step inside: VR lessons, games, and AI-driven stories. Computer Science at Cal Poly Pomona, graduating May 2027.">
+  <meta name="theme-color" content="#16130f">
+  <meta property="og:title" content="Yunjae Cho">
+  <meta property="og:description" content="VR lessons, games, and AI-driven stories.">
+  <meta property="og:image" content="https://nomercoli.github.io/assets/video/ds-5-container-most-water.jpg">
+  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  <link rel="preload" href="assets/fonts/bodoni-moda-latin-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
 
-        <title>Yunjae Cho</title>
-
-
-        <!-- External file links for this html page  -->
-        
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
-        <link rel="stylesheet" type="text/css" href="styles/landing.css">
-        <link rel="stylesheet" type="text/css" href="styles/career.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Project related css files --> 
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/escapist.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/platanus.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/cicada.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/popup.css"/>
-        <link rel="stylesheet" type="text/css" href="./styles/project_styles/lawverse.css"/>
-
-        <!-- Icon -->
-        <link rel="icon" type="image/png" href="./data/images/icon_trans.png">
-
-        <!-- Scripts -->
-        <script src="scripts/quick_links.js"></script>
-
-        <!-- Add google analytics data -->
-
-    </head>
-
-    <!-- Add a custom container class implementation here.... -->
-    <body id="top">  
-        <div class="container" style="margin-top: 1%" align="center">   
-            <div id="title">Yunjae Cho</div>            
-            <!-- <img class="landing_logo" src="./data/images/portrait.png" alt="Portrait"> -->
-            <div id="quick_links">
-                <!-- <p id ="tooltip">Quick Links</p> -->
-                <a href="mailto:nomercoli@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/NomerColi" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/yunjae-cho-524a30183/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <!-- <a href="https://www.youtube.com/channel/UCxb2vCV-1go3d0T8kUQSXbA" target="_blank"><i class="fa fa-youtube"></i></a> -->
-                <!-- <a href="https://www.instagram.com//" target="_blank"><i class="fa fa-instagram"></i></a> -->
-            </div>
-            <hr>
-            <div id="about_me">Greetings. I am Yunjae Cho, a programmer who wants to make this world a better place with AI and games.</div>
-            <hr>
-
-            <section class="buttons">
-                <div class="button_container">
-                    <div id="projects-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Projects</div> 
-                    <div id="career-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Career</div> 
-                    <div id="skills-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Skills</div> 
-                    <div id="research-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Research</div> 
-                </div>
-            </section>
-        </div>
-
-        <!-- Scripts used in top body -->
-        <!-- <script src="scripts/text_animation.js"></script> -->
-    </body>
-
-    <div id="bottom">
-        <!-- Data_Labels -->
-        <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;"></div>
-        <div id="project_data_area" class="container kd-selection-content" style="opacity: 0;"></div>
-        <script src="scripts/button_nav_selection.js"></script>
-        <script src="scripts/button_nav_proj.js"></script>
-        <script src="scripts/button_nav_career.js"></script>
-
+  <header class="titlecard">
+    <video class="titlecard__bg" poster="assets/video/ds-5-container-most-water.jpg" muted loop playsinline autoplay preload="metadata" aria-hidden="true" tabindex="-1">
+            <source src="assets/video/ds-5-container-most-water.mp4" type="video/mp4">
+            <source src="assets/video/ds-5-container-most-water.webm" type="video/webm">
+          </video>
+    <div class="titlecard__frame">
+      <p class="titlecard__pre">A portfolio by</p>
+      <h1 class="titlecard__name">Yunjae Cho</h1>
+      <p class="titlecard__line">I build interactive worlds people can step inside: VR lessons, games, and AI-driven stories.</p>
+      <p class="titlecard__meta">Computer Science at Cal Poly Pomona, graduating May 2027. Based in Pomona, California.</p>
+      <nav class="titlecard__links" aria-label="Contact">
+        <a href="mailto:nomercoli@gmail.com">Email</a>
+        <a href="https://github.com/NomerColi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yunjae-cho-524a30183/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/docs/Yunjae_Cho_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+      </nav>
     </div>
+    <nav class="reel" aria-label="Sections">
+      <a href="#spice">VR for the classroom</a>
+      <a href="#work">Other work</a>
+      <a href="#experience">Experience</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- SPICE -->
+    <section id="spice" class="scene" aria-labelledby="spice-title">
+      <div class="scene__head">
+        <p class="scene__date">2026 to now</p>
+        <h2 id="spice-title" class="scene__title">Learning data structures in VR</h2>
+        <p class="scene__role">Student Assistant and sole programmer, SPICE project, IMMERSYNC Lab, Cal Poly Pomona</p>
+      </div>
+
+      <div class="prose">
+        <p>Cal Poly Pomona's SPICE program funds new ways of teaching. In Dr. Jamshidi's lab I build VR activities that let computer science students walk around inside the algorithms they study, and I program every interaction myself.</p>
+        <p>Each phase starts with a literature review of earlier educational VR projects and how they were evaluated. From there I turn rough activity outlines into detailed implementation plans, then build. The apps run on Meta Quest through OpenXR, with a Unity WebGL version so students without a headset can take part.</p>
+        <p>I planned nine data structures activities and have built seven. Five of them were used in the course.</p>
+      </div>
+
+      <figure class="feature">
+        <div class="embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/mC84IxhBaeg?rel=0" title="Data structures VR activities, full walkthrough" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+        <figcaption>Full walkthrough of the five course activities, 2 min 38 s.</figcaption>
+      </figure>
+
+      <ul class="clips" aria-label="Data structures activities">
+        <li class="clip">
+          <video poster="assets/video/ds-1-sudoku-solver.jpg" muted loop playsinline preload="none" aria-label="Sudoku Solver activity">
+            <source src="assets/video/ds-1-sudoku-solver.mp4" type="video/mp4">
+            <source src="assets/video/ds-1-sudoku-solver.webm" type="video/webm">
+          </video>
+          <h3>Sudoku Solver</h3>
+          <p>Backtracking, with the recursive call stack growing beside the board.</p>
+        </li>
+        <li class="clip">
+          <video poster="assets/video/ds-2-word-search.jpg" muted loop playsinline preload="none" aria-label="Word Search activity">
+            <source src="assets/video/ds-2-word-search.mp4" type="video/mp4">
+            <source src="assets/video/ds-2-word-search.webm" type="video/webm">
+          </video>
+          <h3>Word Search</h3>
+          <p>Recursive search through a letter grid, dead ends and backtracking included.</p>
+        </li>
+        <li class="clip">
+          <video poster="assets/video/ds-3-pointer-playground.jpg" muted loop playsinline preload="none" aria-label="Pointer Playground activity">
+            <source src="assets/video/ds-3-pointer-playground.mp4" type="video/mp4">
+            <source src="assets/video/ds-3-pointer-playground.webm" type="video/webm">
+          </video>
+          <h3>Pointer Playground</h3>
+          <p>Add and delete linked list nodes while the matching code writes itself out.</p>
+        </li>
+        <li class="clip">
+          <video poster="assets/video/ds-4-brackettower.jpg" muted loop playsinline preload="none" aria-label="BracketTower activity">
+            <source src="assets/video/ds-4-brackettower.mp4" type="video/mp4">
+            <source src="assets/video/ds-4-brackettower.webm" type="video/webm">
+          </video>
+          <h3>BracketTower</h3>
+          <p>Push and pop a stack to build an expression, then convert infix to postfix.</p>
+        </li>
+        <li class="clip clip--wide">
+          <video poster="assets/video/ds-5-container-most-water.jpg" muted loop playsinline preload="none" aria-label="Container With Most Water activity">
+            <source src="assets/video/ds-5-container-most-water.mp4" type="video/mp4">
+            <source src="assets/video/ds-5-container-most-water.webm" type="video/webm">
+          </video>
+          <h3>Container With Most Water</h3>
+          <p>Two pointers sweep the array while the water area is measured, step by step.</p>
+        </li>
+      </ul>
+
+      <div class="results">
+        <h3 class="results__title">Tested in class</h3>
+        <p class="results__intro">In September 2026, 35 students in CS 2400, Data Structures, worked through the Container With Most Water and Word Search activities and then answered a survey.</p>
+        <dl class="results__list">
+          <div><dt>83%</dt><dd>agreed the activity helped them connect the problem to an array or algorithm concept</dd></div>
+          <div><dt>77%</dt><dd>found the instructions clear</dd></div>
+          <div><dt>71%</dt><dd>agreed the visualization helped them reason through the solution steps</dd></div>
+          <div><dt>71%</dt><dd>said seeing the problem structure and possible moves was better with VR than without</dd></div>
+        </dl>
+        <p class="results__after">Their written feedback became my next list of changes: step and pause controls, a reset point for the standing platform, smoother turning, and more hands-on code.</p>
+      </div>
+
+      <div class="subscene" aria-labelledby="cyber-title">
+        <p class="scene__date">Earlier in 2026</p>
+        <h3 id="cyber-title" class="subscene__title">Network security, from the inside</h3>
+        <div class="prose">
+          <p>Before the lab moved to data structures, I built a firewall simulation with Dr. Xiao and two cybersecurity students. A cloud, a router and a PC sit in a line. Students set stateless and stateful firewalls on the router or the PC, send safe and malicious packets, read packet headers, and switch between the physical devices and an abstract view that shows the packets and firewalls inside them.</p>
+        </div>
+        <ul class="clips clips--three" aria-label="Network security activity">
+          <li class="clip">
+            <video poster="assets/video/cyber-1-packet-inspection.jpg" muted loop playsinline preload="none" aria-label="Packet inspection">
+            <source src="assets/video/cyber-1-packet-inspection.mp4" type="video/mp4">
+            <source src="assets/video/cyber-1-packet-inspection.webm" type="video/webm">
+          </video>
+            <h4>Reading a packet</h4>
+            <p>Header fields and source and destination addresses, up close.</p>
+          </li>
+          <li class="clip">
+            <video poster="assets/video/cyber-2-physical-abstract-view.jpg" muted loop playsinline preload="none" aria-label="Switching to the abstract view">
+            <source src="assets/video/cyber-2-physical-abstract-view.mp4" type="video/mp4">
+            <source src="assets/video/cyber-2-physical-abstract-view.webm" type="video/webm">
+          </video>
+            <h4>Two ways to see it</h4>
+            <p>The grip button swaps the hardware for its insides.</p>
+          </li>
+          <li class="clip">
+            <video poster="assets/video/cyber-3-router-firewall.jpg" muted loop playsinline preload="none" aria-label="Configuring the router firewall">
+            <source src="assets/video/cyber-3-router-firewall.mp4" type="video/mp4">
+            <source src="assets/video/cyber-3-router-firewall.webm" type="video/webm">
+          </video>
+            <h4>Writing a rule</h4>
+            <p>Set a firewall rule on the router, then watch it in the abstract view.</p>
+          </li>
+        </ul>
+        <p class="more"><a href="https://youtu.be/J8_7e42MSAg" target="_blank" rel="noopener">Watch the full network security demo on YouTube</a></p>
+      </div>
+    </section>
+
+    <!-- OTHER WORK -->
+    <section id="work" class="scene" aria-labelledby="work-title">
+      <div class="scene__head">
+        <p class="scene__date">2019 to 2025</p>
+        <h2 id="work-title" class="scene__title">Other work</h2>
+      </div>
+
+      <article class="work">
+        <p class="work__when">2024 to 2025</p>
+        <div class="work__body">
+          <h3>Cryptobiosis</h3>
+          <p class="work__what">3D horror game, Godot. Best Gameplay award, VGDA Launch Party at CSU Long Beach.</p>
+          <p>Made over a semester with the Video Game Development Association. I led a five-person team using Jira and Scrum, ran our decision polls and assigned tasks around everyone's coursework, and was lead programmer: character control, mining, drill upgrades, monsters and the day cycle. It was my first project in Godot.</p>
+          <p class="work__links"><a href="https://github.com/NomerColi/Cryptobiosis" target="_blank" rel="noopener">Source on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work">
+        <p class="work__when">June 2024</p>
+        <div class="work__body">
+          <h3>Interactive storytelling AI</h3>
+          <p class="work__what">UC Berkeley AI Hackathon. Top 20 of 100 teams.</p>
+          <p>A storytelling AI built on the OpenAI API, narrated with ElevenLabs text to speech. I built the storytelling system and helped teammates get the OpenAI, ElevenLabs and Hume APIs running.</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <p class="work__when">2022</p>
+        <div class="work__body">
+          <h3>Lawverse</h3>
+          <p class="work__what">Freelance proof of concept, Unity and Photon.</p>
+          <p>A demo of a founder's idea for a legal services metaverse. I built a virtual city with buildings and NPCs on Unity's navigation system, Photon multiplayer, and live camera and screen sharing.</p>
+          <p class="work__links"><a href="https://www.youtube.com/watch?v=GpFL9GOv8R4" target="_blank" rel="noopener">Watch the demo</a> <a href="https://github.com/NomerColi/LawVerse" target="_blank" rel="noopener">Source on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work">
+        <p class="work__when">2019</p>
+        <div class="work__body">
+          <h3>PopUp</h3>
+          <p class="work__what">International Sustainability Game Jam, HKU, Utrecht.</p>
+          <p>An environmental puzzle game made with an international team, working in English. As one of two programmers I built the character movement and the furniture placement system the game was built around.</p>
+          <p class="work__links"><a href="https://wesselmast.itch.io/popup" target="_blank" rel="noopener">Play on itch.io</a></p>
+        </div>
+      </article>
+
+      <details class="archive">
+        <summary>Earlier games, 2017 to 2019</summary>
+        <ul>
+          <li><strong>Cicada</strong>, 2018. A 2D platformer made at Seoul Digitech High School. I programmed about fourteen monsters, including a wild boar boss, plus the flashlight and parts of the UI, and ran our booth at the G-Star game show. <a href="https://www.youtube.com/watch?v=Waba-7IE-qE" target="_blank" rel="noopener">Gameplay video</a></li>
+          <li><strong>Platanus</strong>, 2019. A platform jumping game from a game jam at my high school. I focused on keeping its leaf generation system fast. <a href="https://github.com/BroYee/Platanus" target="_blank" rel="noopener">Source</a></li>
+          <li><strong>Escapist</strong>, 2017. A text adventure written in C: about 2,000 lines and a 60 by 150 character map, with many endings. <a href="https://github.com/BroYee/Escapist" target="_blank" rel="noopener">Source</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="scene" aria-labelledby="exp-title">
+      <div class="scene__head">
+        <p class="scene__date">2019 to now</p>
+        <h2 id="exp-title" class="scene__title">Experience</h2>
+      </div>
+      <ol class="timeline" reversed>
+        <li>
+          <p class="timeline__when">Spring 2026 to now</p>
+          <h3>Student Assistant, Unity Developer</h3>
+          <p class="timeline__where">SPICE project, IMMERSYNC Lab, Cal Poly Pomona</p>
+          <p>Sole programmer of the VR activities above, for Meta Quest and the web.</p>
+        </li>
+        <li>
+          <p class="timeline__when">Dec 2024 to Jan 2025</p>
+          <h3>Unity Mentor</h3>
+          <p class="timeline__where">NSF Game Maker Awards, Long Beach</p>
+          <p>Mentored two K-12 students through the competition with Unity tutorials and sample projects I designed.</p>
+        </li>
+        <li>
+          <p class="timeline__when">Fall 2024 to Spring 2025</p>
+          <h3>Project Lead, Godot Developer</h3>
+          <p class="timeline__where">Video Game Development Association, CSU Long Beach</p>
+          <p>Led the Cryptobiosis team and served as a general officer, planning workshops and game jams.</p>
+        </li>
+        <li>
+          <p class="timeline__when">Jan to May 2022</p>
+          <h3>Unity Simulation Developer, freelance</h3>
+          <p class="timeline__where">Lawverse, South Korea</p>
+          <p>Built the legal metaverse proof of concept described above.</p>
+        </li>
+        <li>
+          <p class="timeline__when">Sep 2019 to Dec 2022</p>
+          <h3>Unity Game Developer, full time</h3>
+          <p class="timeline__where">Wooriline, Goyang, South Korea</p>
+          <p>Built and maintained cross-platform online multiplayer games on a four-person team. Integrated Facebook, Google and Firebase for sign-in, ads and security, and built the company's first 3D game systems. Also updated Android plugins, shipped releases through Google Play, and reported progress to the company head every week.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- CREDITS -->
+  <footer id="credits" class="credits" aria-labelledby="credits-title">
+    <h2 id="credits-title" class="credits__title">Credits</h2>
+
+    <dl class="credits__block">
+      <dt>Education</dt>
+      <dd>B.S. Computer Science, Cal Poly Pomona<span>2025 to May 2027. GPA 3.81, Dean's List, President's List</span></dd>
+      <dd>Computer Science, CSU Long Beach<span>2023 to 2025, transferred</span></dd>
+      <dd>Game Development, Seoul Digitech High School<span>2017 to 2020</span></dd>
+    </dl>
+
+    <dl class="credits__block">
+      <dt>Coursework</dt>
+      <dd>Artificial Intelligence, Machine Learning (in progress), Operating Systems, Systems Programming, Numerical Methods, Probability and Statistics</dd>
+    </dl>
+
+    <dl class="credits__block">
+      <dt>Tools</dt>
+      <dd>C# and Unity, OpenXR, Python, C++, C, Godot, Photon, Firebase, OpenAI API, Git, Jira</dd>
+    </dl>
+
+    <dl class="credits__block">
+      <dt>Languages</dt>
+      <dd>Korean, native. English, fluent.</dd>
+    </dl>
+
+    <dl class="credits__block">
+      <dt>Awards</dt>
+      <dd>Best Gameplay, VGDA Launch Party, 2024</dd>
+      <dd>Top 20 of 100 teams, UC Berkeley AI Hackathon, 2024</dd>
+    </dl>
+
+    <div class="credits__end">
+      <p class="credits__cta">Looking for full-time roles starting June 2027.</p>
+      <p class="credits__contact"><a href="mailto:nomercoli@gmail.com">nomercoli@gmail.com</a></p>
+      <p class="credits__links"><a href="assets/docs/Yunjae_Cho_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a> <a href="https://github.com/NomerColi" target="_blank" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/yunjae-cho-524a30183/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="credits__fin">Fin.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
 </html>
