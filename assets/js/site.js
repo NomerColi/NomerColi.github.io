@@ -1,7 +1,7 @@
 // Clips play in black and white, and turn to color while they hold your attention.
 (() => {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const clips = [...document.querySelectorAll(".clip")];
+  const clips = [...document.querySelectorAll(".clip")].filter((c) => c.querySelector("video"));
   const hero = document.querySelector(".titlecard__bg");
 
   if (reduce && hero) { hero.pause(); hero.removeAttribute("autoplay"); }
@@ -34,4 +34,20 @@
   }, { rootMargin: "-35% 0px -35% 0px" });
 
   clips.forEach((c) => { playIO.observe(c); liveIO.observe(c); });
+  document.querySelectorAll(".clip--still").forEach((c) => liveIO.observe(c));
 })();
+
+// YouTube facades: show a thumbnail, load the player only when clicked.
+document.querySelectorAll(".yt").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const f = document.createElement("iframe");
+    const start = btn.dataset.start ? `&start=${btn.dataset.start}` : "";
+    f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0${start}`;
+    f.title = btn.getAttribute("aria-label").replace("Play video: ", "");
+    f.className = "yt-frame";
+    f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    btn.replaceWith(f);
+    f.focus();
+  });
+});

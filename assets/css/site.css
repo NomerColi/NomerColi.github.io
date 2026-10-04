@@ -369,3 +369,50 @@ video.graded, .clip video {
   .work__when { margin: 0; }
   .reel { gap: .25rem 1.25rem; }
 }
+
+/* ---------- YouTube: thumbnail first, player loads on click ---------- */
+
+.yt {
+  position: relative; display: block; width: 100%;
+  aspect-ratio: 16 / 9; padding: 0; border: 0;
+  background: #000; cursor: pointer; overflow: hidden;
+}
+.yt img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: grayscale(1) contrast(1.1) brightness(.85);
+  transition: filter 1.1s var(--ease);
+}
+.yt:hover img, .yt:focus-visible img, .clip.is-live .yt img { filter: none; }
+.yt__play {
+  position: absolute; left: 50%; top: 50%;
+  width: 4.25rem; height: 4.25rem; margin: -2.125rem 0 0 -2.125rem;
+  border: 1px solid var(--silver); border-radius: 50%;
+  background: rgba(0, 0, 0, .45);
+  transition: background .2s, border-color .2s;
+}
+.yt__play::after {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  margin: -.6rem 0 0 -.35rem;
+  border-style: solid; border-width: .6rem 0 .6rem 1rem;
+  border-color: transparent transparent transparent var(--silver);
+}
+.yt:hover .yt__play, .yt:focus-visible .yt__play { background: var(--cine); border-color: var(--cine); }
+.yt:hover .yt__play::after, .yt:focus-visible .yt__play::after { border-left-color: var(--film); }
+.yt-frame { width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; }
+@media (prefers-reduced-motion: reduce) { .yt img { transition: none; } }
+
+.work__media { margin: 1.5rem 0 1rem; }
+
+/* ---------- Earlier games ---------- */
+
+.earlier { border-top: 1px solid var(--rule); padding: 2.25rem 0 0; }
+.earlier__title {
+  margin: 0;
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.1;
+}
+.earlier .clips { margin-top: 1.75rem; }
+.clip .still {
+  width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain;
+  background: #0c0c0c; image-rendering: pixelated;
+}
